@@ -1,31 +1,55 @@
-# React & Tailwind CSS Starter Pack
+# 🎓 edTech - Full Stack Learning Platform
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+A scalable and feature-rich EdTech platform that enables students, instructors, and admins to seamlessly interact through secure authentication, course creation, and enrollment features.
 
-## Usage
+---
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+## 🚀 What Does It Do?
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+**edTech** is an online learning platform designed for a seamless educational experience:
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+- 👨‍🏫 **Instructors** can create and manage courses
+- 👩‍🎓 **Students** can browse, enroll in, and access courses
+- 🛡️ **Admins** can manage platform integrity and user roles
+- 📚 **Courses** can include video lectures, descriptions, pricing, and tags
+- 🔒 Includes secure authentication with JWT & role-based access control
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+---
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+## 🛠️ Tech Stack
 
-## Contributing
+### 🖥️ Frontend
+- **React.js** — Fast, component-based UI rendering
+- **Tailwind CSS** — Rapid styling with utility-first classes
+- **React Router** — Seamless client-side routing
+- **Redux Toolkit** — Global state management
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+### 🌐 Backend
+- **Node.js** + **Express.js** — Lightweight, non-blocking server architecture
+- **JWT (JSON Web Tokens)** — Secure, stateless authentication
+- **Multer** — Handles media uploads
+- **Bcrypt** — Password hashing for secure storage
+
+### 🗄️ Database
+- **MongoDB** — NoSQL database, flexible document structure
+- **Mongoose** — ODM for MongoDB with schema validation
+
+### ☁️ Cloud / Dev Tools
+- **MongoDB Atlas** — Cloud-hosted MongoDB with scaling and backup
+- **Microsoft Azure / AWS** — Cloud infrastructure (optional deployment, storage, and compute)
+- **Postman** — API testing and debugging
+- **Git & GitHub** — Version control and collaboration
+- **MongoDB Compass** — Visual query tool and schema visualization
+
+---
+
+## ✨ Key Features
+
+- ✅ Secure JWT-based login/signup
+- 🔐 Role-based access control (Student, Instructor, Admin)
+- 📹 Upload and manage video lectures
+- 📦 RESTful API architecture with full CRUD functionality
+- 📖 Catalog page with category-based course filtering
+- 🎓 Enroll in courses and track progress
+- 🛒 Add to cart, purchase (extendable to payment gateway)
+- 🎯 Real-time course updates and dashboard stats
