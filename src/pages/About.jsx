@@ -12,22 +12,20 @@ import StatsComponenet from "../components/core/AboutPage/Stats"
 import HighlightText from "../components/core/HomePage/HighlightText"
 import ReviewSlider from "../components/common/ReviewSlider"
 import Footer from "../components/common/Footer"
+import {  FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
     <div>
-      <section className="bg-richblack-700">
+      <section className="bg-richblack-900">
         <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
-          <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">
-            Driving Innovation in Online Education for a
-            <HighlightText text={"Brighter Future"} />
-            <p className="mx-auto mt-3 text-center text-base font-medium text-richblack-300 lg:w-[95%]">
-              edTech is at the forefront of driving innovation in online
-              education. We're passionate about creating a brighter future by
-              offering cutting-edge courses, leveraging emerging technologies,
-              and nurturing a vibrant learning community.
-            </p>
-          </header>
+          <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%] text-center">
+  Building Scalable Tech for a
+  <HighlightText text={"Smarter Tomorrow"} />
+  <p className="mx-auto mt-3 text-center text-base font-medium text-richblack-200 lg:w-[95%]">
+    As a passionate developer from VIT Vellore, I created this EdTech platform to explore full-stack development, solve real-world problems, and deliver impactful digital experiences. This project reflects my goal of using technology to simplify learning and drive meaningful change in education.
+  </p>
+</header>
           <div className="sm:h-[70px] lg:h-[150px]"></div>
           <div className="absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5">
             <img src={BannerImage1} alt="" />
@@ -48,24 +46,14 @@ const About = () => {
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-richblack-500">
           <div className="flex flex-col items-center gap-10 lg:flex-row justify-between">
             <div className="my-24 flex lg:w-[50%] flex-col gap-10">
-              <h1 className="bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] bg-clip-text text-4xl font-semibold text-transparent lg:w-[70%] ">
-                Our Founding Story
+              <h1 className="text-caribbeangreen-50 bg-clip-text text-4xl font-semibold lg:w-[70%] ">
+                Founding Story
               </h1>
-              <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                Our e-learning platform was born out of a shared vision and
-                passion for transforming education. It all began with a group of
-                educators, technologists, and lifelong learners who recognized
-                the need for accessible, flexible, and high-quality learning
-                opportunities in a rapidly evolving digital world.
+              <p className="text-base font-medium text-richblack-50 lg:w-[95%]">
+                  Myself <span className="font-bold text-blue-25 text-xl"> Devkaran Jawal</span>,<br></br> I'm a passionate web developer currently pursuing my studies at VIT Vellore, driven by a deep interest in building scalable, modern web applications. This EdTech platform was developed as a personal project to gain a hands-on understanding of full-stack development, integrating both frontend and backend technologies to strengthen my core skills in real-world environments.
               </p>
-              <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                As experienced educators ourselves, we witnessed firsthand the
-                limitations and challenges of traditional education systems. We
-                believed that education should not be confined to the walls of a
-                classroom or restricted by geographical boundaries. We
-                envisioned a platform that could bridge these gaps and empower
-                individuals from all walks of life to unlock their full
-                potential.
+              <p className="text-base font-medium text-richblack-50 lg:w-[95%]">
+                While the platform is still evolving, it already incorporates essential production-level features like JWT and cookie-based authentication, Razorpay integration, role-based access, media uploading, and an interactive instructor dashboard. My goal is to continuously enhance it while exploring new tools and best practices—transforming this project into a robust, scalable solution aligned with industry standards.
               </p>
             </div>
 
@@ -78,26 +66,48 @@ const About = () => {
             </div>
           </div>
           <div className="flex flex-col items-center lg:gap-10 lg:flex-row justify-between">
-            <div className="my-24 flex lg:w-[40%] flex-col gap-10">
-              <h1 className="bg-gradient-to-b from-[#FF512F] to-[#F09819] bg-clip-text text-4xl font-semibold text-transparent lg:w-[70%] ">
-                Our Vision
+            <div className="my-24 flex lg:w-[40%] flex-col gap-10 relative">
+              {/* BackgrounFade */}
+              
+              <div className={`h-[200px] w-full absolute bottom-0 rounded-full bg-richblack-400 opacity-20 blur-3xl drop-shadow-[0_0_60px_#00C9A7] pointer-events-none`} />
+              <h1 className="text-caribbeangreen-50 bg-clip-text text-4xl font-semibold lg:w-[70%] ">
+                Academics
               </h1>
-              <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-                With this vision in mind, we set out on a journey to create an
-                e-learning platform that would revolutionize the way people
-                learn. Our team of dedicated experts worked tirelessly to
-                develop a robust and intuitive platform that combines
-                cutting-edge technology with engaging content, fostering a
-                dynamic and interactive learning experience.
-              </p>
+              <p className="text-base font-medium text-richblack-50 lg:w-[95%]">
+                  I have maintained strong academic performance throughout my education, consistently aiming for excellence and self-improvement. Alongside my coursework, I actively pursue certifications and hands-on projects to broaden my technical knowledge and industry exposure.
+                </p>
+                <ul className="list-disc text-base font-medium text-richblack-50 lg:w-[95%] pl-6 space-y-1">
+                  <li>Pursuing B.Tech at VIT Vellore with a <span className="font-bold text-blue-25">CGPA of 9.09</span></li>
+                  <li>Scored 96% in 10th grade and 92.8% in 12th grade</li>
+                  <li>Certified in <strong>Microsoft Azure AI Fundamentals (AI-102)</strong></li>
+                  <li>Completed a professional Web Development certification</li>
+                </ul>
             </div>
-            <div className="my-24 flex lg:w-[40%] flex-col gap-10">
-              <h1 className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text text-4xl font-semibold lg:w-[70%] ">
-              Our Mission
-              </h1>
-              <p className="text-base font-medium text-richblack-300 lg:w-[95%]">
-              Our mission goes beyond just delivering courses online. We wanted to create a vibrant community of learners, where individuals can connect, collaborate, and learn from one another. We believe that knowledge thrives in an environment of sharing and dialogue, and we foster this spirit of collaboration through forums, live sessions, and networking opportunities.
-              </p>
+            <div className="my-24 flex lg:w-[40%] flex-col gap-10 relative">
+              
+              <div className={`h-[200px] w-full absolute top-0 rounded-full bg-richblack-400 opacity-20 blur-3xl drop-shadow-[0_0_60px_#00C9A7] pointer-events-none`} />
+              <h1 className="text-caribbeangreen-50 bg-clip-text text-4xl font-semibold lg:w-[70%] ">
+                  My Other Projects
+                </h1>
+                <p className="text-base font-medium text-richblack-50 lg:w-[95%]">
+                  Beyond this EdTech platform, I’ve built several full-stack and frontend projects that reflect my commitment to continuous learning and practical application. These include a feature-rich blog backend, a responsive shopping site, a real-time weather app, a trip planner, and a file upload tool with Cloudinary integration.
+                </p>
+                <ul className="list-disc text-base font-medium text-richblack-50 lg:w-[95%] pl-6 space-y-1">
+                  <li>Tech Stack: MERN (MongoDB, Express, React, Node.js), Tailwind CSS</li>
+                  <li>Tools Used: Postman, MongoDB Compass, JWT, Razorpay, Axios, Cloudinary</li>
+                  <li>Projects emphasize authentication, API integration, dynamic UIs, and user-centric features</li>
+                  <li>
+                  <a
+                    href="https://github.com/devjawal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-150 hover:text-caribbeangreen-50 transition-all duration-200"
+                  >
+                    Explore more on my GitHub
+                    <FaGithub />
+                  </a>
+                </li>
+                </ul>
             </div>
           </div>
         </div>

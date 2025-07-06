@@ -38,7 +38,7 @@ function Home() {
 
         {/* Sub Heading */}
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
-          Welcome to our EdTech platform, founded by Devkaran Jawal — a passionate developer.<br></br>
+          Welcome to our EdTech platform, founded by <span className="text-richblack-50">Devkaran Jawal</span> — a passionate developer.<br></br>
 With our online coding courses, you can learn at your own pace from anywhere in the world. Our mission is to empower learners by offering rich resources including hands-on projects and personalized feedback from experienced instructors.
         </div>
 
