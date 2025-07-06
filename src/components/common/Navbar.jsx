@@ -153,16 +153,27 @@ function Navbar() {
 
         {/* Mobile Menu Dropdown */}
         {isMobileMenuOpen && (
-          <div className="absolute top-14 left-0 w-full bg-richblack-800 z-[1000] flex flex-col items-center md:hidden text-richblack-25 p-4 shadow-md border-t border-richblack-700">
+          <div className="absolute top-14 left-0 w-full bg-richblack-800 z-[1000] flex flex-col items-center justify-center md:hidden text-richblack-25 p-4 shadow-md border-t border-richblack-700">
             {NavbarLinks.map((link, index) => (
-              <Link
-                to={link.path}
-                key={index}
-                className="py-2 text-sm font-medium"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.title}
-              </Link>
+              <div key={index} className="w-full text-center">
+                {link.title === "Catalog" ? (
+                  <Link
+                    to="/catalog/java" //  default category route
+                    className="block py-2 text-sm font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.title}
+                  </Link>
+                ) : (
+                  <Link
+                    to={link.path}
+                    className="block py-2 text-sm font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.title}
+                  </Link>
+                )}
+              </div>
             ))}
             {!token && (
               <>
