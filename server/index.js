@@ -18,15 +18,16 @@ const PORT = process.env.PORT || 4000;
 
 //database connect
 database.connect();
-//middlewares
-app.use(express.json());
-app.use(cookieParser());
 app.use(
 	cors({
 		origin:["http://localhost:3000","https://edtech-devjawal.vercel.app","https://edtech-devjawal-3imi3d9cj-devkaran-jawals-projects.vercel.app"],
 		credentials:true,
 	})
 )
+//middlewares
+app.use(express.json());
+app.use(cookieParser());
+
 
 app.use(
 	fileUpload({
