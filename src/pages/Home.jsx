@@ -38,7 +38,7 @@ function Home() {
 
         {/* Sub Heading */}
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
-          Welcome to our EdTech platform, founded by <span className="text-richblack-50">Devkaran Jawal</span> — a passionate developer.<br></br>
+          Welcome to our EdTech platform, founded by <span className="text-richblack-50">Devkaran Jawal</span> — a MERN Full Stack developer.<br></br>
 With our online coding courses, you can learn at your own pace from anywhere in the world. Our mission is to empower learners by offering rich resources including hands-on projects and personalized feedback from experienced instructors.
         </div>
 
@@ -52,10 +52,21 @@ With our online coding courses, you can learn at your own pace from anywhere in 
             
           </CTAButton>
           <CTAButton active={false} linkto={"/signup"}>
-            Join In
+            Sign Up
           </CTAButton>
         </div>
-
+         {/* Video */}
+      <div className="mx-auto my-7 w-full max-w-[800px] px-4 shadow-[10px_-5px_50px_-5px] shadow-blue-200 rounded-md">
+          <video
+            className="w-full h-auto rounded-md shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+            muted
+            loop
+            autoPlay
+            playsInline
+          >
+            <source src={Banner} type="video/mp4" />
+          </video>
+        </div>
        
 
         {/* Code Section 1  */}
@@ -116,18 +127,8 @@ With our online coding courses, you can learn at your own pace from anywhere in 
             backgroundGradient={"bg-blue-50"}
           />
         </div>
-             {/* Video */}
-       <div className="mx-auto my-7 w-full max-w-[800px] px-4 shadow-[10px_-5px_50px_-5px] shadow-blue-200 rounded-md">
-          <video
-            className="w-full h-auto rounded-md shadow-[0_0_20px_rgba(255,255,255,0.2)]"
-            muted
-            loop
-            autoPlay
-            playsInline
-          >
-            <source src={Banner} type="video/mp4" />
-          </video>
-        </div>
+            
+       
         {/* Explore Section */}
         <ExploreMore />
       </div>

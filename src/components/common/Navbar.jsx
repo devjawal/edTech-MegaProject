@@ -52,7 +52,7 @@ function Navbar() {
       <div className="flex w-11/12 max-w-maxContent items-center justify-between relative">
         {/* Logo */}
         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-          <img src={logo} alt="Logo" width={160} height={32} loading="lazy" />
+          <img src={logo} alt="Logo" width={150} height={30} loading="lazy" className="rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.15)]" />
         </Link>
 
         {/* Desktop Nav Links */}
