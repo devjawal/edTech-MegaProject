@@ -4,43 +4,43 @@ import CTAButton from "../../../components/core/HomePage/Button";
 
 const LearningGridArray = [
   {
-    order: -1,
-    heading: "World-Class Learning for",
-    highlightText: "Anyone, Anywhere",
-    description:
-      "edTech partners with more than 275+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.",
-    BtnText: "Learn More",
-    BtnLink: "/",
-  },
+  order: -1,
+  heading: "Explore the Platform",
+  highlightText: "Key Features and Capabilities",
+  description:
+    "This section highlights the core functionalities and technical strengths of the edTech platform — a full-stack learning system designed to support students, instructors, and admins through secure, scalable, and interactive tools.",
+  BtnText: "Explore Platform",
+  BtnLink: "/",
+},
   {
     order: 1,
-    heading: "Curriculum Based on Industry Needs",
+    heading: "Role-Based Access Control",
     description:
-      "Save time and money! The Belajar curriculum is made to be easier to understand and in line with industry needs.",
+      "Customized functionality for each user type — students access courses, instructors manage content, and admins oversee platform activity.",
   },
   {
     order: 2,
-    heading: "Our Learning Methods",
+    heading: "Course Creation and Management",
     description:
-      "edTech partners with more than 275+ leading universities and companies to bring",
+      "Instructors can create structured courses with videos, descriptions, pricing, and categories using an intuitive interface.",
   },
   {
     order: 3,
-    heading: "Certification",
+    heading: "Seamless Enrollment and Progress Tracking",
     description:
-      "edTech partners with more than 275+ leading universities and companies to bring",
+      "Students can browse the course catalog, enroll, and track their learning journey with built-in progress indicators. Includes Razorpay test-mode integration for simulating secure payment flows.",
   },
   {
     order: 4,
-    heading: `Rating "Auto-grading"`,
+    heading: "Secure Authentication",
     description:
-      "edTech partners with more than 275+ leading universities and companies to bring",
+      "JWT-based login and role validation ensure a secure, stateless, and scalable user session management system.",
   },
   {
     order: 5,
-    heading: "Ready to Work",
+    heading: "Modern Full-Stack Architecture",
     description:
-      "edTech partners with more than 275+ leading universities and companies to bring",
+      "Built using React, Node.js, MongoDB, Tailwind CSS, and deployed on Vercel/Render — ensuring performance, responsiveness, and scalability.",
   },
 ];
 

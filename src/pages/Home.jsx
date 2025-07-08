@@ -38,7 +38,7 @@ function Home() {
 
         {/* Sub Heading */}
         <div className="-mt-3 w-[90%] text-center text-lg font-bold text-richblack-300">
-          Welcome to our EdTech platform, founded by <span className="text-richblack-50">Devkaran Jawal</span> — a MERN Full Stack developer.<br></br>
+          Welcome to our EdTech platform, developed by <span className="text-richblack-50">Devkaran Jawal</span> — a MERN Full Stack developer.<br></br>
 With our online coding courses, you can learn at your own pace from anywhere in the world. Our mission is to empower learners by offering rich resources including hands-on projects and personalized feedback from experienced instructors.
         </div>
 
@@ -94,7 +94,7 @@ With our online coding courses, you can learn at your own pace from anywhere in 
               active: false,
             }}
             codeColor={"text-blue-150"}
-            codeblock={`<!DOCTYPE html>\n <html lang="en">\n<head>\n<title>This is myPage</title>\n</head>\n<body>\n<h1><a href="/">Header</a></h1>\n<nav> <a href="/one">One</a> <a href="/two">Two</a> <a href="/three">Three</a>\n</nav>\n</body>`}
+            codeblock={`<!DOCTYPE html>\n <html lang="en">\n<head>\n<title>Hello, Dev here!</title>\n</head>\n<body>\n<h1><a href="/">Header</a></h1>\n<nav> <a href="/one">One</a> <a href="/two">Two</a> <a href="/three">Three</a>\n</nav>\n</body>`}
             backgroundGradient={"bg-caribbeangreen-50"}
           />
         </div>

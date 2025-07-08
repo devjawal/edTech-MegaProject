@@ -13,6 +13,7 @@ import HighlightText from "../components/core/HomePage/HighlightText"
 import ReviewSlider from "../components/common/ReviewSlider"
 import Footer from "../components/common/Footer"
 import {  FaGithub } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
   Building Scalable Tech for a
   <HighlightText text={"Smarter Tomorrow"} />
   <p className="mx-auto mt-3 text-center text-base font-medium text-richblack-200 lg:w-[95%]">
-    As a passionate developer from VIT Vellore, I created this EdTech platform to explore full-stack development, solve real-world problems, and deliver impactful digital experiences. This project reflects my goal of using technology to simplify learning and drive meaningful change in education.
+    I created this EdTech platform to explore full-stack development, solve real-world problems, and deliver impactful digital experiences. This project reflects my goal of using technology to simplify learning and drive meaningful change in education.
   </p>
 </header>
           <div className="sm:h-[70px] lg:h-[150px]"></div>
@@ -38,6 +39,32 @@ const About = () => {
       <section className="border-b border-richblack-700">
         <div className="mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-richblack-500">
           <div className="h-[100px] "></div>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1RdIU5nf268e1hya6dzDqP2GMFtM4TFeW/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group mx-auto mt-12 w-fit rounded-full bg-caribbeangreen-100 p-1 font-bold text-richblack-800 transition-all duration-200 hover:scale-95 hover:bg-yellow-50">
+                <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200">
+                  <p>View Resume</p>
+                  <FaArrowRight />
+                </div>
+                
+              </div>
+              <div className="mx-auto flex justify-center items-center mt-6">
+                <a
+                    href="https://github.com/devjawal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex top-3 text-xl items-center gap-2 text-blue-150 hover:text-yellow-50 transition-all duration-200"
+                  >
+                    Explore more on my GitHub
+                    <FaGithub />
+                  </a>
+              </div>
+            </a>
+          </div>
           <Quote />
         </div>
       </section>
@@ -96,17 +123,9 @@ const About = () => {
                   <li>Tech Stack: MERN (MongoDB, Express, React, Node.js), Tailwind CSS</li>
                   <li>Tools Used: Postman, MongoDB Compass, JWT, Razorpay, Axios, Cloudinary</li>
                   <li>Projects emphasize authentication, API integration, dynamic UIs, and user-centric features</li>
-                  <li>
-                  <a
-                    href="https://github.com/devjawal"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-150 hover:text-caribbeangreen-50 transition-all duration-200"
-                  >
-                    Explore more on my GitHub
-                    <FaGithub />
-                  </a>
-                </li>
+                  
+                  
+                
                 </ul>
             </div>
           </div>
