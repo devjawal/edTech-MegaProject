@@ -41,7 +41,7 @@ const About = () => {
           <div className="h-[100px] "></div>
           <div>
             <a
-              href="https://drive.google.com/file/d/1RdIU5nf268e1hya6dzDqP2GMFtM4TFeW/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1dZuXhdkOXHroGyy34G3BKb9E2vErdf8x/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
             >
